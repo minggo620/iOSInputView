@@ -19,3 +19,7 @@
 ##Step Processes:
 1.以UITextview为例，在Storyboard设计UI如下图。  
 ![](https://github.com/minggo620/iOSInputView/blob/master/picture/inputview1.jpg)
+2.自定义UIView作为ToolBar  
+`[self.toolBarView removeFromSuperview]; //主要因为inputAccessoryView的view不能在storyboard的父view机场上设置`  
+
+`self.testTv.inputAccessoryView = self.toolBarView;`
