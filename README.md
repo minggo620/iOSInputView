@@ -122,4 +122,4 @@
     }
 
 #####7.最终的效果如下
-![](https://github.com/minggo620/iOSInputView/blob/master/picture/inputview.gif)   
+![](https://github.com/minggo620/iOSInputView/blob/master/picture/inputView.gif)   
