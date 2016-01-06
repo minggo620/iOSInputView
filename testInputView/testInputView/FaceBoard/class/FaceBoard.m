@@ -128,6 +128,7 @@
 - (void)faceButton:(id)sender {
 
     int i = ((FaceButton*)sender).buttonIndex;
+    
     if (self.inputTextField) {
 
         NSMutableString *faceString = [[NSMutableString alloc]initWithString:self.inputTextView.text];
