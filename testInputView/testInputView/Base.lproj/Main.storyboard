@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Input View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TestInputViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请输入内容" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-gd-Fny">
+                                <rect key="frame" x="16" y="96" width="288" height="128"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Qc5-0I-9FP"/>
+                                </constraints>
+                                <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkb-Z2-fUI">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgE-0o-P46">
+                                        <rect key="frame" x="8" y="7" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eNa-B8-IR2"/>
+                                            <constraint firstAttribute="width" constant="46" id="ujd-h5-Syt"/>
+                                        </constraints>
+                                        <state key="normal" title="表情" image="board_emoji.png"/>
+                                        <connections>
+                                            <action selector="switchBt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NH9-7S-CpE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bgE-0o-P46" firstAttribute="leading" secondItem="vkb-Z2-fUI" secondAttribute="leading" constant="8" id="3qF-Mj-mDd"/>
+                                    <constraint firstAttribute="bottom" secondItem="bgE-0o-P46" secondAttribute="bottom" constant="7" id="B6J-4D-RSQ"/>
+                                    <constraint firstAttribute="height" constant="44" id="KVH-a4-mOt"/>
+                                    <constraint firstItem="bgE-0o-P46" firstAttribute="top" secondItem="vkb-Z2-fUI" secondAttribute="top" constant="7" id="OB8-xa-Iyc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vkb-Z2-fUI" secondAttribute="trailing" id="4xR-IT-Hzj"/>
+                            <constraint firstItem="8Sr-gd-Fny" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Fi8-59-SJp"/>
+                            <constraint firstItem="vkb-Z2-fUI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Smz-86-mGN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vkb-Z2-fUI" secondAttribute="bottom" id="aEg-Jc-Kcw"/>
+                            <constraint firstItem="8Sr-gd-Fny" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="76" id="d3Y-QL-zdE"/>
+                            <constraint firstItem="8Sr-gd-Fny" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sT6-C8-sHv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testTv" destination="8Sr-gd-Fny" id="k96-QC-rNr"/>
+                        <outlet property="toolBarView" destination="vkb-Z2-fUI" id="Pia-Xj-RfG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="board_emoji.png" width="32" height="32"/>
+    </resources>
+</document>
