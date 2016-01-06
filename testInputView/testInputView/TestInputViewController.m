@@ -58,13 +58,16 @@
     isEmotionShow=NO;
     isKeyboard=NO;
 }
-
+- (void)textViewDidChange:(UITextView *)textView{
+    
+}
 -(void)keyboardwillShow:(NSNotification *)notification{
     
 }
 -(void)keyboardwillHide:(NSNotification *)notification{
     
 }
+
 -(void)keyboardDidHide:(NSNotification *)notification{
     
     if (isEmotionShow||isKeyboard) {
@@ -72,10 +75,6 @@
     }else{
         
     }
-}
-
-- (void)textViewDidChange:(UITextView *)textView{
-    
 }
 
 - (IBAction)switchBt:(id)sender {
